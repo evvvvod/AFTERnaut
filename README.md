@@ -10,9 +10,11 @@ It combines latent space exploration, multimodal sensor data input, and interact
 
 * [nn~](https://github.com/acids-ircam/nn_tilde/releases/tag/v1.6.0)
 * [AFTER](https://github.com/acids-ircam/AFTER)
-* [FluCoMa](https://github.com/flucoma)for datasets and machine learning
+* [FluCoMa](https://github.com/flucoma) for datasets and machine learning
 * [BBDMI](https://gitlab.huma-num.fr/bbdmi) for EMG input
 * [PiPo](https://github.com/ircam-ismm/pipo) for Bayes filter
+
+![Alt text](https://github.com/evvvvod/AFTERnaut/blob/main/AFTERnaut_v1_screenshot.png)
 
 ***Instructions***
 
@@ -64,7 +66,7 @@ This also becomes an eight point vector for interactive machine learning.
 Presets and Datasets:
 
 Once you identify sounds you like from the blue sections of the patch, you can save these as presets via the pattr system and give them a numerical label.
-You can then recall these and build three-part datasets, consisting of a label (the preset number), sensor data (eight point vector from sensor routing), and biasers and scalers (32 point vector of current slider and dial readings)
+You can then recall these and build three-part datasets, consisting of a label (the preset number), sensor data (eight point vector from sensor routing), and biasers and scalers (32 point vector of current slider and dial readings).
 We recommend starting by demonstrating fixed gestural positions while using the sensors and taking snapshots, recalling a preset, and clicking Add Example.
 You can save or load these presets and datasets as JSON files through the interface.
 
@@ -74,5 +76,3 @@ Classification models are trained on preset labels and sensor data, and predict 
 Regression models are trained on sensor data and biaser scaler values, and output new biaser scaler values for new sensor input.
 Train by clicking the button until the loss function is acceptable.
 Save and load models as JSON.
-
-
